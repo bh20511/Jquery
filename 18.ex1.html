@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="product-demo d-flex justify-content-center">
+                    <img src="./images/character_1.png" alt="" class="h-100">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex">
+                    <div class="col">
+                        <div class="img-wrap"><img class="w-100" src="./images/character_2.png" alt=""></div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrap"><img class="w-100" src="./images/character_3.png" alt=""></div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrap"><img class="w-100" src="./images/character_4.png" alt=""></div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrap"><img class="w-100" src="./images/character_5.png" alt=""></div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrap"><img class="w-100" src="./images/character_6.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.img-wrap img').click(function(e){
+            // console.log('e.currentTarget:',e.currentTarget);
+            let bigs = $(".product-demo").children().attr('src');
+            let s = $(e.currentTarget).attr('src');
+            // $(".product-demo").attr('src',s);
+            $(".product-demo").children().attr('src',s);
+            $(e.currentTarget).attr('src',bigs);
+            
+
+        })
+    </script>
+</body>
+
+</html>

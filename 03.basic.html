@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="test">
+        <div class="container">
+            <div class="row">
+                <table class="table table-border">
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+        
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="test2">
+        <div class="container">
+            <div class="row">
+                <table class="table table-border">
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+        
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="test3">
+        <div class="container">
+            <div class="row">
+                <table class="table table-border">
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td>td4</td>
+                        <td>td5</td>
+                    </tr>
+                    <tr>
+                        <td>td1</td>
+                        <td>td2</td>
+                        <td>td3</td>
+                        <td><h1>H1!</h1></td>
+                        <td>td5</td>
+                    </tr>
+        
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script>
+        $("tr").css("background","lightyellow")
+        $("tr:even").css("background","lightblue")
+
+        $(".test2  td").css("background","orange")
+        $(".test2 td:even").css("background","lightgreen")
+        $(".test2 td:eq(2)").css("background","red")
+        // $("td").css("background","green")
+
+        $('.test3 td:eq(-3)').css("background","orange")
+        $('.test3 td:lt(-22)').css("background","darkblue")
+        $('.test3 td:first').css("background","purple")
+        $(':header').css('color','pink')
+
+    </script>
+</body>
+</html>
